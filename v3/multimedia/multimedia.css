@@ -1,0 +1,92 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+div.imageWrap {
+	background: black;
+	overflow: hidden;
+	width: 100%;
+	opacity: 1;
+	border: 1px solid #333;
+}
+div.imageWrap > div {
+	display: block;
+	overflow: hidden;
+	width: 100%;
+}
+div.imageWrap > div > img {
+	width: 100%;
+}
+.mainWrapper > .slideshow {
+	margin: 10px;
+	margin-bottom: 0;
+	width: 100%;
+	background: #333;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	float: left;
+	overflow: hidden;
+	border: 1px solid #333;
+	display:none;
+}
+.mainWrapper > .slideshow > .name {
+	background: rgba(0,0,0,0.5);
+	height: 70px;
+	color: white;
+	margin-top: 515px;
+	line-height: 70px;
+	text-align: center;
+	font-size: 1.8em;
+	font-weight: bold;
+}
+.mainWrapper > .slideshow > .name > span {
+	float: right;
+	display: block;
+	height: 70px;
+	text-align: center;
+	background-color: rgba(0,0,0,0.5);
+}
+.mainWrapper > .slideshow > .name > span > b {
+	height: 50px;
+	line-height:50px;
+	float: right;
+	margin: 10px;
+}
+.mainWrapper > .slideshow > .name > span > img {
+	height: 50px;
+	width:50px;
+	float: right;
+	margin: 2px 10px 18px 0;
+}
+.mainWrapper > .queue {
+	width: 100%;
+	overflow: hidden;
+}
+.mainWrapper {
+	height: 100%;
+	overflow: hidden;
+	width: 1080px;
+}
+.mainWrapper .text{
+	background:rgba(0,0,0,0.7);
+	color:white;
+	position:absolute;
+	bottom:0;
+	width:100%;
+	max-width:1040px;
+	padding:20px;
+	font-size:34px;
+	text-align:right;
+}
+
+.subtitle{
+	text-align:center;
+	background:rgba(0,0,0,0.5);
+	color:white;
+	padding:10px 0;
+	position: absolute;
+	bottom:0;
+	font-weight:bold;
+	font-size:20px;
+}

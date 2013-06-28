@@ -1,0 +1,60 @@
+*{
+	margin:0;
+	padding:0;
+	font-family:sans-serif;
+	color:white;
+	overflow:hidden;
+}
+.wrapper{
+	background:rgb(0,93,130);
+	height:300px;
+	width:1080px;
+}
+.wrapper .today{
+	width:40%;
+	display:block;
+	float:left;
+	height:100%;
+}
+.wrapper .forecast{
+	width:30%;
+	display:block;
+	float:left;
+	background-color:rgba(255,255,255,0.2);
+	height:100%;
+}
+.wrapper .day{
+	display:block;
+	text-align:center;
+	font-size:30px;
+	font-weight:bold;
+}
+.wrapper .icon img{
+	float:left;
+	max-height:30%;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+.wrapper .forecast .icon img{
+	float:left;
+	max-height:30%;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+.wrapper .forecast iframe{
+	border: 0;
+	background:rgb(0,93,130);
+	width:100%;
+	height:100%;
+	max-width:100%;
+	max-height:100%;
+}
+
+.wrapper .text,.wrapper .temperature{
+	float:right;
+	display:block;
+	font-size:27px;
+	font-weight:bold;
+	clear:right;
+	padding:10px;
+}

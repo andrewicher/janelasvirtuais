@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+            <rss xmlns:media="http://search.yahoo.com/mrss/" version="2.0">
+                <channel>
+                    <title>ICMC Eventos</title>
+                    <link>http://www.icmc.usp.br</link>
+                    <description>A Test RSS</description>
+                    <language>pt-br</language>
+                    <pubDate>Fri, 28 Jun 2013 12:15:24 -0300</pubDate>
+                    <lastBuildDate>Fri, 28 Jun 2013 12:15:24 -0300</lastBuildDate>
+            
+	  <item>
+		  <title >ICMC exibe o documentário Indie Game: The Movie</title>
+		  <description>
+			  Indie Game: The Movie é um premiado documentário que será exibido nesta sexta-feria, 28 de junho, no Instituto de Ciências Matemáticas e de Computação (ICMC), da USP São Carlos. A apresentação terá início às 19 horas, no auditório Fernão Stella de Rodrigues Germano, e é uma iniciativa do Fellowship 
+		  </description>
+		  <category>Cultura e Extensão</category>
+		  <pubDate>Fri, 28 Jun 2013 19:00:00 -0300</pubDate>
+		  <local>Auditório Fernão Stella de Rodrigues Germano</local>
+	  </item>
+	  
+	  <item>
+		  <title >Prêmio Excelência em Docência de Graduação e lançamento do Catálogo de Pesquisa</title>
+		  <description>
+			  Nesta sexta-feira, 28 de junho, serão realizadas as solenidades do prêmio Excelência em Docência de Graduação do ICMC e do lançamento do Catálogo de Pesquisa do ICMC.
+
+	O prêmio Excelência em Docência de Graduação é uma iniciativa da Pró-Reitoria de Graduação com o objetivo de incentivar as Unidades
+		  </description>
+		  <category>Acadêmicos e solenes</category>
+		  <pubDate>Fri, 28 Jun 2013 16:30:00 -0300</pubDate>
+		  <local>Sala da Congregação do ICMC</local>
+	  </item>
+	  
+	  <item>
+		  <title >1º Programa de Inverno do ICMC</title>
+		  <description>
+			  Estão abertas até o dia 1º de julho as inscrições para dois cursos de extensão, que compõem o primeiro Programa de Inverno do Instituto de Ciências Matemáticas e de Computação (ICMC), da USP São Carlos. Os cursos serão realizados entre os dias 2 e 18 de julho, de terça à sexta-feira, na sala 5-001 d
+		  </description>
+		  <category>Cultura e Extensão</category>
+		  <pubDate>Tue, 02 Jul 2013 00:00:00 -0300</pubDate>
+		  <local>sala 5-001</local>
+	  </item>
+	  
+	  <item>
+		  <title >II School on Machine Learning and Knowledge Discovery in Databases (MLKDD)</title>
+		  <description>
+			  
+		  </description>
+		  <category>Científicos</category>
+		  <pubDate>Sun, 14 Jul 2013 00:00:00 -0300</pubDate>
+		  <local>auditório Fernão Stella de Rodrigues Germano</local>
+	  </item>
+	  
+	  <item>
+		  <title >1st Symposium on Knowledge Discovery, Mining and Learning (KDMiLe)</title>
+		  <description>
+			  
+		  </description>
+		  <category>Científicos</category>
+		  <pubDate>Wed, 17 Jul 2013 00:00:00 -0300</pubDate>
+		  <local>auditório Fernão Stella de Rodrigues Germano</local>
+	  </item>
+	  </channel></rss>

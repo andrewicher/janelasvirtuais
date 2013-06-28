@@ -1,0 +1,20 @@
+URL_WEATHER = "http://www.google.com/ig/api?weather=Sao-Carlos&hl=pt-br";
+USP_CARDAPIO = "http://www.ccsc.usp.br/restaurante.xml";
+
+//ICMC_DESTAQUES      = "http://www.icmc.usp.br/feed/noticias.php";
+ICMC_DESTAQUES = "http://icmc-usp.blogspot.com/feeds/posts/default?alt=rss";
+ICMC_FLICKR = "http://api.flickr.com/services/feeds/photos_public.gne?id=56306050@N03&lang=pt-br&format=&" + new Date().getTime();
+ICMC_PLAYLIST = "http://gdata.youtube.com/feeds/api/playlists/A1399FFA4D23261F";
+ICMC_EVENTOS = new Array();
+ICMC_EVENTOS[0] = "http://www.icmc.usp.br/eventos/feed/?" + new Date().getTime();
+ICMC_EVENTOS[1] = "http://www.icmc.usp.br/intranet/bancas/xml.php";
+/* defesas */
+
+ICMC_TWITTER = new Array();
+ICMC_TWITTER[0] = "http://search.twitter.com/search.rss?q=%23janelasvirtuais&" + new Date().getTime();
+ICMC_WHITELIST = "http://www.icmc.usp.br/~janelasvirtuais/whitelist.rss?" + new Date().getTime();
+TEMPO_INICIO_MIDIA = 55000;
+TEMPO_REFRESH_MIDIA = 90000;
+TEMPO_REFRESH_ABAS = 90000;
+TEMPO_REFRESH_WEATHER = 90000;
+API_KEY_GOOGLE = 'ABQIAAAAqKq_hUOi903XRQ2gYbnGZxTcA8ivpSz_zP84CoIFwAWCEPSr7hSWOeiLObKzE8uifiqpPR4nD9rKXQ';

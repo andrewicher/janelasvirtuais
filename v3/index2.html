@@ -1,0 +1,86 @@
+<html>
+	<head>
+		<meta HTTP-EQUIV="Pragma" CONTENT="no-cache">
+		<meta http-equiv="refresh" content="900;url=index2.html?mode=tv" />
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<link media="screen, projection" type="text/css" href="lib/hdgrid.css" rel="stylesheet">
+		<script src="lib/jquery-min.js"></script>
+		<script src="const.js"></script>
+		<script src="map.js"></script>
+		<script src="lib/choreographer.js"></script>
+		<link rel="stylesheet" href="./cores.css" type="text/css">
+		<script>
+			var c = 1;
+			var r = 0;
+			var tt = 0;
+
+		</script>
+		<style>
+			#viewport {
+				-moz-transform-origin: 0 0;
+				overflow: hidden;
+				background-color: white;
+				margin: auto;
+			}
+			#pagetranslate {
+				width: 10080px;
+				height: 5200px;
+			}
+			html, body {
+				margin: 0;
+				padding: 0;
+				background-color: black;
+				overflow: hidden;
+			}
+			#debug {
+				background: white;
+				display: none;
+			}
+			#animation {
+				display: none;
+			}
+			.r {
+				-moz-transform: rotate(-90deg);
+			}
+		</style>
+	</head>
+	<body onload="s1()" id="main" class="">
+		<div id="debug" ></div>
+		<div id='viewport' class='viewport' >
+			<div id='pagetranslate' >
+				<div id='pagescale' style='position:relative'>
+					<div  class='gh1080 slide' data-time="2s" data-effect="move" data-duration="3s"  >
+						<div id="top" >
+							<div class='gv50'>
+								<div class='gv50 navbar' id='topleft'>
+									<div class="tab gh200 fundo3">Notícias</div>
+									<div class="tab gh200 fundo2">Eventos</div>
+									<div class="tab gh200 fundo1">Multimídia</div>
+									<div class="tab gh200 fundo4">Social</div>
+									<div class="tab gh200 fundo5">Oportunidades</div>
+								</div>
+							</div>
+						</div>
+						<!-- top itermediate area -->
+						<div id="topmiddle" class="gv0"></div>
+						<!-- central area -->
+						<div id="middle" class='middle gv1570 bg1' ></div>
+						
+
+						<!-- bottom area -->
+						<div id="" class='gv300'>
+							<div class=''>
+								<div class='bottom gv300' id='bottom'></div>
+							</div>
+							<!--<div class='gv0'>
+								<div class='gv5' id='bottomright'></div>
+							</div>-->
+						</div>
+						
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

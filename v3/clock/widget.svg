@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="no"?>
+<!DOCTYPE svg
+  PUBLIC "-//W3C//DTD SVG 1.0//EN"
+  "http://www.w3.org/TR/SVG/DTD/svg10.dtd" >
+<svg
+  width="200" height="200" viewBox="0 0 200 200"
+  xmlns="http://www.w3.org/2000/svg"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  version="1.1" style="margin-top:-5px;">
+
+<defs xmlns="http://www.w3.org/2000/svg">
+    <link xmlns="http://www.w3.org/1999/xhtml" href="http://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css" />
+    <style>
+     text{
+     	font-family: "Nunito", sans-serif;
+     }
+    </style>
+  </defs>
+    <title>Clock Widget</title>
+    <text x="135px" y="135px" id="minutes" font-size="35px" font-weight="bold" fill="white">
+    00
+  </text>
+    <text x="135px" y="165px" id="seconds" font-size="35px" font-weight="bold" fill="white">
+    00
+  </text>
+    <text x="110px" y="160px" font-size="80px" fill="white">
+    :
+  </text>
+    <text x="15px" y="165px" id="hour" font-size="80px" fill="white">
+    00
+  </text>
+    <text x="100px" y="55px" id="day" font-size="30px" text-anchor="middle" font-weight="bold" fill="white">
+    segunda-feira
+  </text>
+  <text x="100px" y="95px" id="date" font-size="25px" text-anchor="middle" font-weight="bold" fill="white">
+    23 de setembro
+  </text>
+  <script type="text/ecmascript" xlink:href="clock.js"/>
+</svg>

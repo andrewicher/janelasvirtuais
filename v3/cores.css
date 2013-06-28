@@ -1,0 +1,126 @@
+*{
+	margin:0;
+	padding:0;
+	overflow:hidden;
+	font-family:sans-serif;
+}
+.gv30{
+	height:30px;
+}
+.gv1920{
+	height:1920px;
+}
+.gv690{
+	height:690px;
+}
+.gv1080{
+	height:1080px;
+}
+.gv1570{
+	height:1570px;
+}
+.gv60{
+	height:60px;
+}
+.gv300{
+	height:300px;
+}
+.gv200{
+	height:200px;
+}
+.gv250{
+	height:250px;
+}
+.gv495{
+	height:495px;
+}
+
+.gh840{
+	width:840px;
+}
+.gh810{
+	width:810px;
+}
+
+.gh960{
+	width: 960px;
+}
+
+.gh1080{
+	width:1080px;
+}
+.gh1015{
+	width:1015px;
+}
+.gh1920{
+	width:1920px;
+}
+.gh200{
+	width:200px;
+}
+.gh250{
+	width:250px;
+}
+.gh652{
+	width:652px;
+}
+.gh252{
+	width:252px;
+}
+.fundo2{
+	background:#ab5757;
+}
+.fundo3{
+	background:#ab9557;
+}
+.fundo4{
+	background:#90a554;
+}
+.fundo5{
+	background:#457572;
+}
+.fundo1{
+	background:#684b88;
+}
+.bg1{
+	background:#a9bcd1;
+}
+.bg2{
+	background:rgba(255,255,255,1);
+}
+.navbar .tab{
+	float:left;
+	text-align:center;
+	vertical-align:middle;
+	margin-left:13px;
+	padding-bottom:15px;
+	padding-top:15px;
+	color:white;
+	font-weight:bold;
+	border-radius:10px 10px 0 0;
+}
+.fs{
+	font-size:20px;
+}
+.fl{
+	float:left;
+}
+.fr{
+	float:right;
+}
+.active2{
+	background: #ab5757; /* Old browsers */
+}
+.active3{
+	background: #ab9557; /* Old browsers */
+}
+.active4{
+	background: #90a554; /* Old browsers */
+}
+.active5{
+	background: #457572; /* Old browsers */
+}
+.active1{
+	background: #684b88; /* Old browsers */
+}
+

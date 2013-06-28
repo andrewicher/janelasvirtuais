@@ -1,0 +1,60 @@
+.item .img img{
+	height:100%;
+	margin-left:-125px;
+	left:50%;
+	position: relative;
+}
+.item .img{
+	text-align:center;
+	position:relative;
+}
+.item .img .sub{
+	text-align:center;
+	background:rgba(0,0,0,0.5);
+	color:white;
+	padding:10px 0;
+	position: absolute;
+	bottom:0;
+	font-weight:bold;
+	font-size:20px;
+}
+.item .link{
+	padding:5px;
+}
+.mainWrapper .item{
+	height:250px;
+	margin:10px;
+	position:relative;
+}
+.mainWrapper .item *{
+	display:block;
+}
+.mainWrapper{
+	width:1080px;
+	position:relative;
+}
+
+.item .img{
+	background:white;
+	background: url("./logoICMC.png");
+	background-size:200px 200px; 
+	background-repeat:no-repeat;
+	background-position: center center;
+}
+
+.item .title{
+	font-size:40px;
+	margin:20px;
+}
+.item .desc{
+	font-size:20px;
+	margin:20px;
+}
+.item .qrcode{
+	font-size:18px;
+	font-weight:bold;
+	margin:8px;
+	margin-left:0;
+	background:rgba(0,0,0,0.2);
+	text-align:center;
+}

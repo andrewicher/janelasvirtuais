@@ -1,0 +1,141 @@
+#container{
+	width:1080px;
+}
+
+.mainWrapper{
+	width:1080px;
+	position:relative;
+}
+
+.mainWrapper {
+	height:250px;
+	/*margin:10px;
+	position:relative;*/
+}
+
+.item {
+	/*background: rgba(0,0,0,0.5);*/ /*opacidade das linhas*/
+	padding: 1px; /*borda em volta de cada novo evento*/
+	overflow: hidden;
+	margin: 10px; /*espaçamento entre eventos*/
+}
+.item .sep {
+	display: block; 
+	margin: 0 0 1px 0;
+}
+.item .line:last-child, .item .line:nth-last-child(2) {
+	margin: 0; /* espaçamento entre eventos (do segundo em diante); além do espaçamento em "item" */
+}
+.item .title {
+	font-size: 28px;				
+	font-weight: bold;
+}
+.item .line span {
+	padding: 3px 0 0 3px;
+	font-size: 20px;
+	vertical-align: middle;
+}
+.item .line sub { /* "Palestrante", "Categoria", "Data-Hora" */
+	padding: 3px 0 0 3px;
+	font-size: 20px;
+	font-weight: bold;
+	vertical-align: middle;
+}
+.item .column0 {
+	float: left;
+	width: 100%;
+	width: -moz-calc(60% - 1px);
+}
+.item .column1 {
+	float: right;
+	width: 40%;
+	width: -moz-calc(40%);
+	margin-left: -moz-calc(1px);
+}
+.color0 {
+	color: white;
+}
+.color1 {
+	color: #5C7A99;
+}
+.color2 {
+	color: #FF9933;
+}
+.color3 {
+	color: #B8CAD9;
+}
+/*
+.bg1 .line, span.bg1:first-child {
+	background: #5C7A99;
+}
+*/
+.bg2 .title:first-child {
+	background: rgba(48,96,0,0.2);
+}
+.bg3 .title:first-child {
+	background: rgba(255,0,0,0.2);
+}/*
+.bg1 .title, span.bg1:last-child {
+	background: #5C7A99;
+}
+.bg2 .title, span.bg2:last-child {
+	background: #CDC1C5;
+}
+.bg3 .title, span.bg3:last-child {
+	background: #CDC1C5;
+}
+*/
+#subtitle {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+#subtitle div {
+	float: right;
+	font-size: 30px;
+	line-height: 40px;
+	height: 40px;
+	font-weight: bold;
+	border-radius: 10px;
+	margin: 10px;
+	padding-right: 5px;
+	background: rgba(0,0,0,0.3);
+	color: white;
+}
+#subtitle div span {
+	width: 20px;
+	height: 40px;
+	display: block;
+	float: left;
+}
+#subtitle div span:first-child {
+	border-radius: 10px 0 0 10px;
+}
+#subtitle div span:last-child {
+	border-radius: 0 10px 10px 0;
+	margin-right: 10px;
+}
+.fundo1{
+	background:#234168;
+}
+.fundo2{
+	background:#336600;
+}
+.fundo3{
+	background:red;
+}
+.fundo4{
+	background:#ffd000;
+}
+.fundo5{
+	background:#6D0091;
+}
+.bg1{
+	background:#a9bcd1;
+}
+.bg2{
+	background:rgba(255,255,255,0.7);
+}
+.bg3{
+	background:rgba(255,255,255,0.7);
+}

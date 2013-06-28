@@ -1,0 +1,37 @@
+* {
+	padding:0;
+	margin:0;
+	overflow:hidden;
+	font-family:'Gudea',sans-serif;
+	color:rgb(107,128,155);
+	display:block;
+	background-color: white;
+	/*border: 10px inset #4682B4;
+	background-color: rgba(35, 65, 104, 0.07);*/
+}
+body {
+	height:300px;
+}
+.col {
+	width:50%;
+	float:left;
+	text-align:center;
+	margin-top: 13px;
+}
+h1 {
+	width:700px;
+	font-size:32px;
+	padding:0 40px;
+	color: #234168;
+	text-align: center;
+	margin-left: 17%;
+	margin-top: 10px;
+	
+}
+.col h2 {
+	font-size:28px;
+}
+.col h2:first-child {
+	color:black;
+	font-size:28px;
+}

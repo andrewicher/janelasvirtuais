@@ -1,0 +1,111 @@
+/**
+ * @author
+ */
+
+var agenda = {
+	urlFeed : ICMC_EVENTOS,
+	feedList : null,
+	feedEvents : null,
+	feedTheses : null,
+	container : null,
+	maxItens : window.innerHeight / 150,
+	timeRefresh : 90, // in seconds
+	status : Array(0, 0), /* 0=emptyorerror, 1=loaded, 2=processed */
+	init : function(obj) {
+		agenda.container = $(obj);
+		setTimeout(function() {
+			agenda.start();
+		}, 100);
+		var refresh = setInterval(function() {
+			agenda.start();
+		}, agenda.timeRefresh * 1000);
+	},
+	start : function() {
+		agenda.container.html('');
+		agenda.feedList = new Array();
+		agenda.feedEvents = null;
+		agenda.feedTheses = null;
+		agenda.status = new Array(0, 0);
+		setTimeout(function() {
+			agenda.updateFeed()
+		}, 100);
+	},
+	updateFeed : function() {
+		if(agenda.status[0] == 0)
+			$.getJSON("http://query.yahooapis.com/v1/public/yql?q=select * from rss where url=\"" + agenda.urlFeed[0] + "\"&format=json").success(function(e) {
+				agenda.feedEvents = e.query.results.item;
+				agenda.status[0] = 1;
+			}).error(agenda.status[0] = 0);
+
+		if(agenda.status[1] == 0)
+			$.getJSON("http://query.yahooapis.com/v1/public/yql?q=select * from rss where url=\"" + agenda.urlFeed[1] + "\"&format=json").success(function(e) {
+				agenda.feedTheses = e.query.results.item;
+				agenda.status[1] = 1;
+			}).error(agenda.status[1] = 0);
+
+		setTimeout(function() {
+			if(agenda.status[0] == 1 && agenda.status[1] == 1)
+				agenda.process();
+			else
+				agenda.updateFeed();
+		}, 200);
+	},
+	process : function() {
+		agenda.status[0] = 2;
+		for(var i = 0; agenda.feedEvents != null && i < agenda.feedEvents.length; i++) {
+			agenda.feedEvents[i].type = 'event';
+			agenda.feedEvents[i].pubDate = new Date(agenda.feedEvents[i].pubDate);
+			agenda.feedList.push(agenda.feedEvents[i]);
+		}
+
+		agenda.status[1] = 2;
+		for(var i = 0; agenda.feedTheses != null && i < agenda.feedTheses.length; i++) {
+			agenda.feedTheses[i].type = 'theses';
+			/* corrige a falta da padrão do rss
+			var dt = new Date(parseInt(agenda.feedTheses[i].pubDate.split('-')[0], 10), parseInt(agenda.feedTheses[i].pubDate.split('-')[1], 10)-1, parseInt(agenda.feedTheses[i].pubDate.split('-')[2], 10), parseInt((agenda.feedTheses[i].pubDate.split(' ')[1]).split(':')[0], 10), parseInt((agenda.feedTheses[i].pubDate.split(' ')[1]).split(':')[1], 10), 0, 0);
+			agenda.feedTheses[i].pubDate = dt;
+			/* fim da correção */
+			agenda.feedTheses[i].pubDate = new Date(agenda.feedTheses[i].pubDate);
+			console.log(agenda.feedTheses[i]);
+			agenda.feedList.push(agenda.feedTheses[i]);
+		}
+		agenda.render();
+	},
+	render : function() {
+		agenda.container.html('');
+		agenda.feedList.sort(agenda.compareDate);
+		for(var i = 0; i < agenda.feedList.length && i < agenda.maxItens; i++) {
+			agenda.container.append(agenda.printItem(agenda.feedList[i]));
+		}
+	},
+	compareDate : function(a, b) {
+		if(a.pubDate < b.pubDate)
+			return -1;
+		else if(a.pubDate > b.pubDate)
+			return 1;
+		else
+			return 0;
+	},
+	formatDate : function(data) {
+		var months = Array('Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro');
+		var weekDay = Array('Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sábado');
+		var time = (data.getHours() < 10 ? '0' + data.getHours() : data.getHours()) + ":" + (data.getMinutes() < 10 ? '0' + data.getMinutes() : data.getMinutes());
+
+		return (weekDay[data.getDay()] + ", " + data.getDate() + ' de ' + months[data.getMonth()] + ' ás ' + time + 'h');
+	},
+	printItem : function(obj) {
+		if(obj.type == 'event')
+			var bg = 'bg3';
+		else
+			var bg = 'bg2';
+		var item = $('<div>').addClass('item').addClass(bg);
+		var title = $('<div>').addClass('line').addClass('title').html('<span>' + obj.title + '</span>');
+		var author = $('<div>').addClass('line').addClass('column0').html('<sub>Palestrante</sub><span>' + obj.author + '</span>');
+		var datetime = $('<div>').addClass('line').addClass('column1').html('<sub>Data - Horário</sub><span>' + agenda.formatDate(obj.pubDate) + '</span>');
+		var category = $('<div>').addClass('line').addClass('column0').html('<sub>Categoria</sub><span>' + obj.category + '</span>');
+		var local = $('<div>').addClass('line').addClass('column1').html('<sub>Local</sub><span>' + obj.local + '</span>');
+		item.append(title).append(author).append(datetime).append(category).append(local);
+
+		return item;
+	},
+}
